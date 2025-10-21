@@ -31,6 +31,6 @@ sum(int64_t N, int64_t A[])
       int64_t j = A[i];   // 1st load (index)
       acc += B[j];        // 2nd load (indirect)
    }
-   return 0;
+   return acc;
 }
 
