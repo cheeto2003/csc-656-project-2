@@ -1,0 +1,6 @@
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/benchmark.dir
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/sum_direct.dir
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/sum_vector.dir
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/sum_indirect.dir
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/edit_cache.dir
+/global/homes/g/gene_o/csc-656-project-2/build/CMakeFiles/rebuild_cache.dir
