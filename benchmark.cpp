@@ -47,7 +47,7 @@ int main(int argc, char** argv)
       // insert your end timer code here, and print out elapsed time for this problem size
       auto t1 = clock_t::now();
       double elapsed = std::chrono::duration<double>(t1 - t0).count();
-      printf(" Sum result = %lf \n", (long long)t);
+      printf(" Sum result = %lld \n", (long long)t);
       printf(" elapsed_sec = %.9f \n", elapsed);
 
    } // end loop over problem sizes
