@@ -19,7 +19,7 @@ Assumptions: developed and tested using Python version 3.8.8 on macOS 11.6
 import pandas as pd
 import matplotlib.pyplot as plt
 
-plot_fname = "bandwidth_pct.png"
+plot_fname = "latency_ns.png"
 
 fname = "sample_data_3vars.csv"
 df = pd.read_csv(fname, comment="#")
@@ -39,21 +39,21 @@ code3_time = df[var_names[3]].values.tolist()
 
 plt.figure()
 
-plt.title("Problem Size vs % Peak DRAM Bandwidth")
+plt.title("Problem Size vs Memory Latency")
 
 xlocs = [i for i in range(len(problem_sizes))]
 
 plt.xticks(xlocs, problem_sizes)
 
-plt.plot(code1_time, "r-o")
-plt.plot(code2_time, "b-x")
-plt.plot(code3_time, "g-^")
+plt.plot(code1_time, "r-o", label="Direct_Sum")
+plt.plot(code2_time, "b-x", label="Vector_Sum")
+plt.plot(code3_time, "g-^", label="Indirect_Sum")
 
 #plt.xscale("log")
 #plt.yscale("log")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("% of Peak Bandwidth")
+plt.ylabel("Effective Latency (ns/access)")
 
 varNames = [var_names[1], var_names[2], var_names[3]]
 plt.legend(varNames, loc="best")
